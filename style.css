@@ -1,0 +1,171 @@
+/* ==========================================================================
+   Lebone's Cozy 3D Studio Setup Styles
+   ========================================================================== */
+
+:root {
+  --bg-soft: #fcf8f7;
+  --pastel-pink: #ffb7b2;
+  --pastel-purple: #e8dbfc;
+  --text-dark: #4a3e3d;
+  --text-muted: #8a7a79;
+  --glass-bg: rgba(255, 255, 255, 0.4);
+  --glass-border: rgba(255, 255, 255, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg-soft);
+  color: var(--text-dark);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* 3D Viewport Layer Configuration
+   ========================================================================== */
+.canvas-container {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+}
+
+spline-viewer {
+  width: 100%;
+  height: 100%;
+}
+
+/* Glassmorphic Navigation HUD
+   ========================================================================== */
+.aesthetic-hud {
+  position: fixed;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(90%, 64rem);
+  padding: 1rem 2rem;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 30px;
+  box-shadow: 0 8px 32px 0 rgba(232, 219, 252, 0.15);
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--text-dark);
+}
+
+/* Hero Content Placement
+   ========================================================================== */
+.hero-overlay {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  padding-left: max(2rem, 10vw);
+  height: 100vh;
+  pointer-events: none; /* Let cursor actions fall through text layers straight into the 3D map */
+}
+
+.intro-card {
+  pointer-events: auto; /* Restores button triggers and selection highlights within the text card */
+  max-width: 28rem;
+}
+
+.status-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.4rem 0.8rem;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  margin-bottom: 1.25rem;
+  display: inline-block;
+}
+
+.main-title {
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.main-subtitle {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.explore-btn {
+  cursor: pointer;
+  padding: 1rem 2.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #ffffff 0%, var(--pastel-purple) 100%);
+  color: var(--text-dark);
+  border: 1px solid var(--glass-border);
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(232, 219, 252, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.explore-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Sub-Level Modules Layout
+   ========================================================================== */
+.content-section {
+  position: relative;
+  z-index: 5;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.floating-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  padding: 2.5rem;
+  border-radius: 24px;
+  max-width: 32rem;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.03);
+}
+
+.floating-panel h2 {
+  margin-bottom: 1rem;
+}

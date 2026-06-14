@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- SEO Requirement: Core Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lebone Moloi's Creative Frontend Developer Portfolio - Junior Software Developer studying at CodeSpace Academy.">
+  <meta name="keywords" content="Lebone Moloi, Creative Developer, Frontend Developer, CodeSpace Academy, Web Development, South Africa">
+  <meta name="author" content="Lebone Moloi">
+  
+  <title>Lebone Moloi | Junior Software Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 3D VIEWPORT LAYER -->
+  <div class="canvas-container">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+    <spline-viewer url="https://prod.spline.design/wJpyw3hPt94xF-SK/scene.splinecode"></spline-viewer> 
+  </div>
+
+  <!-- INTERFACE HEADER (NAVIGATION) -->
+  <header class="aesthetic-hud">
+    <div class="logo">LEBONE // MOLOI</div>
+    <nav class="nav-links">
+      <a href="#projects">Missions</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO INTRODUCTION SECTION -->
+  <main class="hero-overlay">
+    <div class="intro-card">
+      <span class="status-badge">✨ CHILL SPACE ONLINE</span>
+      <h1 class="main-title">Lebone Moloi</h1>
+      <p class="main-subtitle">Junior Software Developer sharing my journey and learning in tech. Studying web development at CodeSpace Academy.</p>
+      <button class="explore-btn" onclick="document.querySelector('#projects').scrollIntoView({behavior: 'smooth'})">
+        Explore Desk
+      </button>
+    </div>
+  </main>
+
+  <!-- PROJECT SHOWCASE MODULE (Requirement: Minimum 2 Projects) -->
+  <section id="projects" class="content-section">
+    <div class="showcase-container">
+      <h2 class="section-heading">Selected Creations</h2>
+      
+      <div class="projects-grid">
+        <!-- Project 1: Kanban Task Manager -->
+        <article class="project-card">
+          <div class="project-image-container">
+            <img src="images/kanban-project.jpg" alt="Kanban Task Manager UI Preview" class="project-img">
+          </div>
+          <div class="project-info">
+            <h3>Kanban Task Manager</h3>
+            <p class="project-desc">A dynamic task management system engineered with an array-of-objects data structure and an automated incremental unique ID system.</p>
+            <div class="tech-tags">
+              <span>JavaScript ES6</span>
+              <span>DOM Manipulation</span>
+              <span>Array Filters</span>
+            </div>
+            <a href="https://github.com/Bonolobee/LEBMOL25522_PTO2508_GroupB_Lebone-Moloi_JSL02" target="_blank" class="project-link">View Project →</a>
+          </div>
+        </article>
+
+        <!-- Project 2: Interactive Birthday Celebration Site -->
+        <article class="project-card">
+          <div class="project-image-container">
+            <img src="images/birthday-project.jpg" alt="Interactive Birthday Site Preview" class="project-img">
+          </div>
+          <div class="project-info">
+            <h3>Interactive Celebration Site</h3>
+            <p class="project-desc">A custom personal commission website featuring dynamic UI adjustments and engaging custom visual transitions using CSS Keyframe animations.</p>
+            <div class="tech-tags">
+              <span>HTML5</span>
+              <span>CSS Animations</span>
+              <span>Mobile-First Logic</span>
+            </div>
+            <a href="https://github.com/Bonolobee/birthdaymessage101" target="_blank" class="project-link">View Project →</a>
+          </div>
+        </article>
+
+        <!-- Project 3: Pets Instagram UI Replica -->
+        <article class="project-card">
+          <div class="project-image-container">
+            <img src="images/instagram-project.jpg" alt="Pets Instagram Replicated UI Preview" class="project-img">
+          </div>
+          <div class="project-info">
+            <h3>Pets Instagram Replicated UI</h3>
+            <p class="project-desc">Translated complex Figma canvas artboards directly into clean, semantic layout code mirroring professional media components.</p>
+            <div class="tech-tags">
+              <span>Figma-to-Code</span>
+              <span>Responsive Web Design</span>
+              <span>CSS3 UI</span>
+            </div>
+            <a href="https://github.com/Bonolobee/LEBMOL25522_PTO2508_GroupB_Lebone-Moloi_SDF03" target="_blank" class="project-link">View Project →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION (Brief Compliance & Background details) -->
+  <section id="about" class="content-section">
+    <div class="showcase-container">
+      <h2 class="section-heading">About Me</h2>
+      <p class="section-text">I am an aspiring Software Developer based in Gauteng, completing an intensive frontend specialization at CodeSpace Academy. With a strong performance background in analytical Mathematics, I bring logical problem-solving and a meticulous pixel-perfect translation approach to turning designs into active software.</p>
+      
+      <h3 style="margin: 1.5rem 0 1rem; font-size: 1.2rem;">Core Tech Matrix</h3>
+      <div class="tech-tags">
+        <span>JavaScript (ES6+)</span>
+        <span>HTML5 / CSS3</span>
+        <span>C++</span>
+        <span>C</span>
+        <span>Git & GitHub</span>
+        <span>Figma</span>
+        <span>Cisco Systems</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="content-section">
+    <div class="showcase-container">
+      <h2 class="section-heading">Secure Connection</h2>
+      <p class="section-text">Have an open project terminal, a frontend mission, or just want to chat about engineering spaces? Let's build together.</p>
+      
+      <div style="margin-bottom: 2.5rem;">
+        <a href="mailto:moloilebone74@gmail.com" class="explore-btn" style="text-decoration:none; display:inline-block; margin-right: 1rem;">moloilebone74@gmail.com</a>
+      </div>
+
+      <div class="nav-links" style="display:flex; gap:0.5rem;">
+        <a href="https://github.com/Bonolobee" target="_blank" style="margin:0;">GitHub</a>
+        <a href="https://linkedin.com/in/LEBONE-MOLOI" target="_blank" style="margin:0;">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
